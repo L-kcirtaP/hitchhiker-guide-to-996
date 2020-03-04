@@ -26,3 +26,5 @@ def q_sort(array, start, end):
 
 array = [4, 0, 2, 5, 7, 3, 10]
 q_sort(array, 0, len(array)-1)
+
+print(array)
