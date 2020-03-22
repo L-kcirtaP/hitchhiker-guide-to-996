@@ -1,10 +1,8 @@
-d = {
-	'a': 0,
-	'b': 1,
-}
+lst = [1, 2, 3, 432, 225, 12525, 2525435, 2535226, 23532, 23, 52, 362, 1516, 1, 3]
 
-def foo(**d):
-	print(d)
-	print(d['a'])
-
-foo(**d)
+cnt = 0
+for i in lst:
+	print(f'{i:>8}', end='')
+	cnt += 1
+	if cnt % 5 == 0:
+		print('\n')
