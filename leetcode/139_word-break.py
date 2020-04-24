@@ -10,7 +10,7 @@
 # 				return True
 # 	return False
 
-### optimal solution using dp
+### better solution using dp
 def wordBreak(s: str, wordDict) -> bool:
 	dp = [True if i == 0 else False for i in range(len(s)+1)]
 

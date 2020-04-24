@@ -1,8 +1,20 @@
-lst = [1, 2, 3, 432, 225, 12525, 2525435, 2535226, 23532, 23, 52, 362, 1516, 1, 3]
+class A():
+	def __init__(self):
+		self.data = 1
 
-cnt = 0
-for i in lst:
-	print(f'{i:>8}', end='')
-	cnt += 1
-	if cnt % 5 == 0:
-		print('\n')
+	def good(self):
+		print('good A')
+
+class B():
+	def __init__(self):
+		self.data = 2
+
+	def good(self):
+		print('good B')
+
+
+def poly(obj):
+	obj.good()
+
+poly(A())
+poly(B())
