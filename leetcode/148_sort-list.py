@@ -49,8 +49,7 @@ n2.next = n3
 n3.next = n4
 solution = Solution()
 ini = solution.sortList(head)
-print(ini.val)
-print(ini.next.val)
-print(ini.next.next.val)
-print(ini.next.next.next.val)
-print(ini.next.next.next.next.val)
+p = ini
+while p:
+    print(p.val)
+    p = p.next
