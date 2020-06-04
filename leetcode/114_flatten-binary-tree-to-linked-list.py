@@ -10,7 +10,20 @@ class Solution:
         if not root:
             return root
         
+        left = self.flatten(root.left)
+        right = self.flatten(root.right)
 
+        if left:
+            left_most = left
+            while left_most.right:
+                left_most = left_most.right
+            root.left = None
+            root.right = left
+            left_most.right = right
+        else:
+            root.right = right
+
+        return root
 
 s = Solution()
 root = TreeNode(1)
