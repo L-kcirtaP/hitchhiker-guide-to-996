@@ -1,6 +1,4 @@
-# algorithm-practice: The Hitchhiker's Guide to 996
-Algorithm practice in multiple programming language.
-
+# The Hitchhiker's Guide to 996
 ### Project Layout
 
 - assets/
