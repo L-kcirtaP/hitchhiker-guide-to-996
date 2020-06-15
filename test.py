@@ -123,25 +123,5 @@
 # print([solveBoard(board) for board in groups])
 
 
-
-# def lottery(n):
-# 	import random
-# 	with open('candidates.txt', 'r') as f:
-# 		candidates = f.readlines()
-# 	return random.sample(candidates, n)
-
-# winners = lottery(34)
-
-# print('======== 三等奖 * 30 ========')
-# for i in range(30):
-# 	print(winners[i])
-# print('======== 二等奖 * 3 ========')
-# for i in range(30, 33):
-# 	print(winners[i])
-# print('======== 一等奖 * 1 ========')
-# for i in range(33, 34):
-# 	print(winners[i])
-
-
 # import random
 # print(random.sample(range(13), 6))
