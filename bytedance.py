@@ -15,8 +15,8 @@ class Log:
 
 class UserStat:
     def __init__(self):
-        self.priority_queue = []
-        heapq.heapify(self.priority_queue)
+        self.min_heap = []
+        heapq.heapify(self.min_heap)
         self.peak = 0
         self.during_peak = False
         self.peak_starting_time = 0
@@ -24,18 +24,18 @@ class UserStat:
         self.peak_duration = 0
     
     def push(self, log):
-        if self.priority_queue:
-            while log.login_time >= self.priority_queue[0]:
-                popped = heapq.heappop(self.priority_queue)
-                if self.during_peak and len(self.priority_queue) == self.peak-1:
+        if self.min_heap:
+            while log.login_time >= self.min_heap[0]:
+                popped = heapq.heappop(self.min_heap)
+                if self.during_peak and len(self.min_heap) == self.peak-1:
                     self.peak_ending_time = popped.logout_time
                     self.during_peak = False
                     self.peak_duration = self.peak_ending_time - self.peak_starting_time
 
-        heapq.heappush(self.priority_queue, log)
+        heapq.heappush(self.min_heap, log)
 
-        if len(self.priority_queue) >= self.peak:
-            self.peak = len(self.priority_queue)
+        if len(self.min_heap) >= self.peak:
+            self.peak = len(self.min_heap)
             self.peak_starting_time = log.login_time
             self.during_peak = True
     
