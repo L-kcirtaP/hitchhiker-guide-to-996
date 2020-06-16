@@ -22,5 +22,5 @@
 
 Thank to myself so far.
 
-If you also want to help LGU computer science undergraduate with **professional trainings** (mainly for interviews), by sharing your 面经 or notes, feel free to make pull request to this repo or directly ask me for the collaborator!
+If you also want to help LGU computer science undergraduate with **professional trainings** (mainly for interviews), by sharing your 面经 or notes, feel free to make pull request to this repo or directly ask me for the collaborator privilege!
 
